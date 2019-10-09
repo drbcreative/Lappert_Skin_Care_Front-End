@@ -1,0 +1,44 @@
+body,
+html {
+  background: url('../img/body-bg@2x.jpg') center / cover;
+  background-attachment: fixed;
+}
+
+main {
+  padding-top: 7rem;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 113.917px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: 120.317px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 174.567px;
+  }
+}
+
+section {
+  overflow: hidden;
+}
+
+.containerish {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+
+}
+
+.section-info {
+  .title-bg {
+    height: 126px;
+    width: 125.75px;
+    opacity: .15;
+    position: absolute;
+    top: -45px;
+    left: -45px;
+  }
+}

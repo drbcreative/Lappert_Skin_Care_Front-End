@@ -1,0 +1,54 @@
+// Color Theme Vars
+$color-main: #67B7A5;
+$color-dark: #3E565E;
+$color-dark-accent: #9DAEB8;
+$color-extra-dark: #000;
+$color-light: #F7F7F6;
+$color-light-accent: #A9B89D;
+$color-extra-light: #fff;
+$color-white: #fff;
+$color-black: #000;
+$color-text-grey: #3E565E;
+
+/* -------------------------------------------------------------------------- */
+/* COLOR THEME */
+/* -------------------------------------------------------------------------- */
+.color-main {
+  color: $color-main;
+}
+
+.color-dark {
+  color: $color-dark;
+}
+
+.color-dark-accent {
+  color: $color-dark-accent;
+}
+
+.color-extra-dark {
+  color: $color-extra-dark;
+}
+
+.color-light {
+  color: $color-light;
+}
+
+.color-light-accent {
+  color: $color-light-accent;
+}
+
+.color-extra-light {
+  color: $color-extra-light;
+}
+
+.color-white {
+  color: $color-white;
+}
+
+.color-black {
+  color: $color-black;
+}
+
+.color-text-grey {
+  color: $color-text-grey;
+}

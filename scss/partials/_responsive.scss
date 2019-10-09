@@ -1,0 +1,153 @@
+/* -------------------------------------------------------------------------- */
+/* RESPONSIVE MEDIA QUERIES */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* SMALL BREAKPOINT (Landscape Phones and Up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 576px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* MEDIUM BREAKPOINT (Tablets 768px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .ui-btn {
+    display: inline-flex;
+    min-width: 186px;
+    padding: 1.5rem 1rem;
+  }
+
+
+  /* HERO ******************************************************************* */
+  .hero {
+    padding: 10px 20px;
+    height: 600px;
+
+    &::before {
+      background: rgba($color-dark, .3);
+    }
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* LARGE BREAKPOINT (Desktops 992px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 992px) {
+  .ui-btn {
+    display: inline-flex;
+    padding: 1.3rem 0.3rem;
+  }
+
+  /* TOPBAR ***************************************************************** */
+  .topbar {
+    padding: .2rem 1rem;
+
+    .containerish {
+      grid-template-columns: max-content 1fr max-content;
+      align-items: center;
+
+
+      .col-mid {
+        display: flex;
+        justify-content: center;
+
+        p {
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+
+
+  /* HERO ******************************************************************* */
+  .hero {
+    &::before {
+      background: rgba($color-dark, 0);
+    }
+  }
+
+  /* SEARCH ***************************************************************** */
+  .search {
+    // background: $color-light;
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: max-content 1fr max-content;
+      grid-gap: 1rem;
+      align-items: center;
+
+      .form-control {
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+
+      .form-control:not(button) {
+        border: 1px solid #ededed;
+      }
+
+      ::placeholder {
+        color: #3e3a42;
+        font-family: $font-primary;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {}
+
+/* -------------------------------------------------------------------------- */
+/* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1400px) {
+
+  /* TOPBAR ***************************************************************** */
+  .topbar {
+    padding: .2rem 1rem;
+
+    .containerish {
+      grid-template-columns: 1fr max-content 1fr;
+      align-items: center;
+
+
+      .col-mid {
+        display: flex;
+        justify-content: center;
+
+        p {
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+      .col-right {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+    }
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1900px) {
+  .hero {
+    height: 850px;
+  }
+}

@@ -1,0 +1,34 @@
+Font Families:
+  - Primary: Open Sans
+  - Secondary: Bellefair
+
+Topbar: Secondary, 11, Regular
+
+Navbar: Secondary, 15, Semi Bold
+
+Lead Copy: Primary, 20, Regular
+
+Body Copy: Primary, 20, Regular
+
+H1: Secondary, 50, Regular
+
+H2: Secondary, 45, Regular
+
+H3: Secondary, 35, Regular
+
+H4: Secondary, 30, Regular
+
+H5: Secondary, 25, Italic
+
+H6: Secondary, 20, Italic
+
+Buttons: Secondary, 16, Semibold
+
+Testimonial Copy: Primary, 25, Bold Italic
+
+Footer Copy: Primary, 14, Light
+
+Small Copy: Primary, 12, Regular
+
+Bottom Footer Copy: Primary, 12, Light
+

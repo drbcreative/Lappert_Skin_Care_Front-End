@@ -72,6 +72,34 @@
       }
     }
   }
+
+  /* SMARTLIPO ************************************************************** */
+  .smartlipo {
+    padding: 40px 20px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($color-light, .7);
+    }
+
+    .containerish {
+      display: flex;
+      justify-content: flex-end;
+
+      .section-info {
+        max-width: 450px;
+        z-index: 20;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -226,6 +254,36 @@
     }
   }
 
+  /* SMARTLIPO ************************************************************** */
+  .smartlipo {
+    padding: 40px 20px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($color-light, 0);
+    }
+
+    .containerish {
+      display: flex;
+      justify-content: flex-end;
+
+      .section-info {
+        max-width: 450px;
+        z-index: 20;
+        margin-right: 4rem;
+        margin-bottom: -8rem;
+      }
+    }
+  }
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -328,6 +386,26 @@
 
       .col-right {
         height: 600px;
+      }
+    }
+  }
+
+  /* SMARTLIPO ************************************************************** */
+  .smartlipo {
+    padding: 40px 20px;
+    height: 950px;
+    display: flex;
+    align-items: center;
+
+    .containerish {
+      display: flex;
+      justify-content: flex-end;
+
+      .section-info {
+        max-width: 450px;
+        z-index: 20;
+        margin-right: 4rem;
+        margin-bottom: -8rem;
       }
     }
   }

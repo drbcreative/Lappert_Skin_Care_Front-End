@@ -87,3 +87,30 @@
     }
   }
 }
+
+/* SMARTLIPO **************************************************************** */
+.smartlipo {
+  background: url('../../img/smart-lipo-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-light, .7);
+  }
+
+  .containerish {
+    display: flex;
+    align-items: center;
+
+    .section-info {
+      z-index: 20;
+    }
+  }
+}

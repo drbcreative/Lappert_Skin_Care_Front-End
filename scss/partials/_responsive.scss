@@ -47,6 +47,31 @@
       }
     }
   }
+
+  /* TEMPSURE *************************************************************** */
+  .tempsure {
+    background: url('../../img/tempsure-bg@2x.jpg') center / cover;
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      row-gap: 1rem;
+
+      .col-left {
+        background: url('../../img/tempsure-info-bg@2x.jpg') center / cover;
+        padding: 40px 20px;
+        grid-row: 2;
+
+        .ui-btn:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        .ui-btn-white {
+          color: $color-light-accent;
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -165,6 +190,42 @@
       }
     }
   }
+
+  /* TEMPSURE *************************************************************** */
+  .tempsure {
+    padding: 50px 20px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      column-gap: 1rem;
+
+      .col-left {
+        padding: 0 4rem;
+        grid-row: 1;
+        display: flex;
+        align-items: center;
+
+        .ui-btn {
+          display: flex;
+          max-width: 220px;
+        }
+
+        .ui-btn:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        .ui-btn-white {
+          color: $color-light-accent;
+        }
+      }
+
+      .col-right {
+        height: 600px;
+      }
+    }
+  }
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -234,6 +295,41 @@
 
   .nav-item {
     margin-right: 1.5rem;
+  }
+
+  /* TEMPSURE *************************************************************** */
+  .tempsure {
+    padding: 50px 20px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3rem;
+
+      .col-left {
+        padding: 0 4rem;
+        grid-row: 1;
+        display: flex;
+        align-items: center;
+
+        .ui-btn {
+          display: flex;
+          max-width: 220px;
+        }
+
+        .ui-btn:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        .ui-btn-white {
+          color: $color-light-accent;
+        }
+      }
+
+      .col-right {
+        height: 600px;
+      }
+    }
   }
 
 }

@@ -1,24 +1,24 @@
-body,
-html {
-  background: url('../img/body-bg@2x.jpg') center / cover;
-  background-attachment: fixed;
-}
+// body,
+// html {
+//   background: url('../img/body-bg@2x.jpg') center / cover;
+//   background-attachment: fixed;
+// }
 
-main {
-  padding-top: 7rem;
+// main {
+//   padding-top: 7rem;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 113.917px;
-  }
+//   @media screen and (min-width: 768px) {
+//     padding-top: 113.917px;
+//   }
 
-  @media screen and (min-width: 992px) {
-    padding-top: 120.317px;
-  }
+//   @media screen and (min-width: 992px) {
+//     padding-top: 120.317px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 174.567px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 174.567px;
+//   }
+// }
 
 section {
   overflow: hidden;
@@ -28,17 +28,39 @@ section {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-
-
 }
 
-.section-info {
-  .title-bg {
-    height: 126px;
-    width: 125.75px;
-    opacity: .15;
-    position: absolute;
-    top: -45px;
-    left: -45px;
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.scroll-top {
+  width: 64px;
+  height: 41px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999999;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  display: none;
+
+  &.show {
+    display: block;
+    opacity: 1;
+    transition: all .2s ease-in-out;
   }
 }
+
+// .section-info {
+//   .title-bg {
+//     height: 126px;
+//     width: 125.75px;
+//     opacity: .15;
+//     position: absolute;
+//     top: -45px;
+//     left: -45px;
+//   }
+// }

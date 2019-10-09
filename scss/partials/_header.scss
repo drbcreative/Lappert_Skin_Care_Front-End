@@ -2,8 +2,12 @@
 /* HEADER */
 /* -------------------------------------------------------------------------- */
 header {
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 9999;
   height: auto;
+
+  @media screen and (min-width: 992px) {
+    position: absolute;
+  }
 }

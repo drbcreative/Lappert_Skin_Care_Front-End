@@ -9,7 +9,7 @@
 
     .col-left {
       .social-link {
-        color: $color-light-accent;
+        color: $color-dark;
         margin-right: .5rem;
 
         &:hover {
@@ -24,7 +24,7 @@
 
     .col-right {
       .topbar-link {
-        color: $color-text-grey;
+        color: $color-dark;
         margin-right: .5rem;
         font-family: $font-primary;
         font-size: 0.8125rem;

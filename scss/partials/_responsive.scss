@@ -23,17 +23,30 @@
     padding: 1.5rem 1rem;
   }
 
+  .navbar {
+    padding: 1rem .5rem;
+  }
+
 
   /* HERO ******************************************************************* */
   .hero {
     padding: 10px 20px;
     height: 600px;
 
+    align-items: flex-start;
+
     &::before {
-      background: rgba($color-dark, .3);
+      background: rgba($color-light, 0);
+    }
+
+    .containerish {
+
+      .section-info {
+        margin-top: 3rem;
+        text-align: left;
+      }
     }
   }
-
 }
 
 /* -------------------------------------------------------------------------- */
@@ -67,11 +80,61 @@
     }
   }
 
+  /* NAVBAR ***************************************************************** */
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+  .nav-wrapper {
+    background-image: linear-gradient(to right, rgba($color-white, 0) 50%, rgba($color-white, .8));
+    position: relative;
+    transition: all .3s ease-in-out;
+    padding: .2rem 1rem;
+
+    &.show {
+      background: $color-white !important;
+      transition: all .3s ease-in-out;
+      box-shadow: 0 3px 6px rgba($color-black, .06);
+    }
+
+    .container {
+      position: relative;
+
+      .navbar {
+        padding: .5rem 0;
+
+        .navbar-brand {
+          display: none;
+        }
+      }
+
+      .desktop-logo {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        width: 274.16px;
+        height: 86.7px;
+        z-index: 999;
+        display: block;
+      }
+    }
+
+  }
+
 
   /* HERO ******************************************************************* */
   .hero {
-    &::before {
-      background: rgba($color-dark, 0);
+    padding: 10px 20px;
+    height: 650px;
+
+    align-items: flex-end;
+
+    .containerish {
+
+      .section-info {
+        margin-bottom: 3rem;
+        text-align: left;
+      }
     }
   }
 
@@ -107,7 +170,26 @@
 /* -------------------------------------------------------------------------- */
 /* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
 /* -------------------------------------------------------------------------- */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+
+  /* HERO ******************************************************************* */
+  .hero {
+    padding: 10px 20px;
+    height: 735px;
+
+    align-items: flex-end;
+
+    .containerish {
+
+      .section-info {
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+        text-align: left;
+        max-width: 515px;
+      }
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
@@ -139,6 +221,19 @@
       }
 
     }
+  }
+
+  /* NAVBAR ***************************************************************** */
+  .nav-wrapper {
+    .container {
+      .navbar {
+        padding: .3rem 0 !important;
+      }
+    }
+  }
+
+  .nav-item {
+    margin-right: 1.5rem;
   }
 
 }

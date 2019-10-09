@@ -5,7 +5,7 @@
 /* HERO ********************************************************************* */
 .hero {
   padding: 40px 20px;
-  background: url('../img/hero-img@2x.jpg') center / cover;
+  background: url('../../img/hero-bg@2x.jpg') top / cover;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -18,7 +18,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba($color-dark, .7);
+    background: rgba($color-light, .7);
   }
 
   .containerish {
@@ -26,6 +26,7 @@
 
     .section-info {
       text-align: center;
+      max-width: 450px;
     }
   }
 }

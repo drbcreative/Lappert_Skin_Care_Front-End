@@ -199,3 +199,201 @@
     }
   }
 }
+
+/* APPOINTMENTS AND FEATURES ************************************************ */
+.appointments {
+  background: url('../../img/appointment-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  .containerish {
+    display: grid;
+    row-gap: 1rem;
+
+    .feature-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: .5fr 1.1fr;
+
+      .section-img {
+        grid-row: 1;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .section-info {
+        background: url('../../img/botox-cosmetic-info-bg@2x.jpg') center / cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        position: relative;
+
+        .ui-btn-white {
+          color: $color-dark-accent;
+        }
+
+        .triangle {
+          width: 59px;
+          height: 36px;
+          position: absolute;
+          top: -36px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .feature-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.1fr .5fr;
+
+      .section-img {
+        grid-row: 2;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .section-info {
+        grid-row: 1;
+        background: url('../../img/latisse-info-bg@2x.jpg') top / cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        position: relative;
+
+        .ui-btn-white {
+          color: $color-light-accent;
+        }
+
+        .triangle {
+          width: 59px;
+          height: 36px;
+          position: absolute;
+          bottom: -36px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .feature-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: .5fr 1.1fr;
+
+      .section-img {
+        grid-row: 1;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .section-info {
+        background: url('../../img/botox-cosmetic-info-bg@2x.jpg') center / cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        position: relative;
+
+        .ui-btn-white {
+          color: $color-dark-accent;
+        }
+
+        .triangle {
+          width: 59px;
+          height: 36px;
+          position: absolute;
+          top: -36px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .feature-4 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.1fr .5fr;
+
+      .section-img {
+        grid-row: 2;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .section-info {
+        grid-row: 1;
+        background: url('../../img/latisse-info-bg@2x.jpg') top / cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        position: relative;
+
+        .ui-btn-white {
+          color: $color-light-accent;
+        }
+
+        .triangle {
+          width: 59px;
+          height: 36px;
+          position: absolute;
+          bottom: -36px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    /* form */
+    .appointment-form {
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4rem;
+
+      .form-copy {
+        text-align: center;
+      }
+
+      .appointment-wrapper {
+        flex: 1;
+        padding: 2rem 1rem 1rem 1rem;
+        width: 100%;
+        max-width: 865px;
+        display: grid;
+
+        .form-copy {
+          text-align: center;
+        }
+
+        .form-control {
+          border-radius: 0;
+          height: 45px;
+        }
+
+        input:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+
+        ::placeholder {
+          font-size: .8rem !important;
+          font-family: $font-secondary !important;
+        }
+
+      }
+    }
+  }
+}

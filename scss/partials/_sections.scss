@@ -114,3 +114,88 @@
     }
   }
 }
+
+/* TATOO AND FACELIFT ******************************************************* */
+.tattoo-facelift {
+  background: url('../../img/tattoo-facelift-bg@2x.jpg') center / cover;
+
+  /* TATTOO REMOVAL */
+  .tattoo-removal {
+    padding: 40px 20px;
+
+    .containerish {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .section-info {
+        text-align: center;
+        max-width: 725px;
+      }
+
+      .section-img {
+        height: 300px;
+        width: 100%;
+        background: url('../../img/tattoo-removal-img@2x.jpg') center / cover;
+        background-attachment: scroll;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  /* FACELIFT */
+  .facelift {
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      row-gap: 1rem;
+
+      .col-left {
+        background: url('../../img/facelift-info-bg@2x.jpg') center / cover;
+        padding: 40px 20px;
+        grid-row: 2;
+
+        .ui-btn:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        .ui-btn-white {
+          color: $color-dark-accent;
+        }
+      }
+
+      .col-right {
+        height: 400px;
+        background: url('../../img/facelife-img@2x.jpg') center / cover;
+      }
+    }
+  }
+}
+
+/* LASER HAIR REMOVAL ******************************************************* */
+.laserhair {
+  background: url('../../img/laser-hair-removal-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-light, .7);
+  }
+
+  .containerish {
+    display: flex;
+    align-items: center;
+
+    .section-info {
+      z-index: 20;
+    }
+  }
+}

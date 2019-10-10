@@ -48,26 +48,55 @@
     }
   }
 
-  /* TEMPSURE *************************************************************** */
-  .tempsure {
-    background: url('../../img/tempsure-bg@2x.jpg') center / cover;
-    padding: 40px 20px;
+  /* TEMPSURE-EVENT ********************************************************* */
+  .tempsure-event {
+    background: url('../img/tempsure-bg@2x.jpg') center / cover;
 
-    .containerish {
-      display: grid;
-      row-gap: 1rem;
+    .event {
+      position: relative;
+      padding: 20px;
 
-      .col-left {
-        background: url('../../img/tempsure-info-bg@2x.jpg') center / cover;
-        padding: 40px 20px;
-        grid-row: 2;
+      .containerish {
+        display: grid;
+        background: #fff;
 
-        .ui-btn:not(:last-child) {
-          margin-bottom: 1rem;
+        .col-left {
+          height: 300px;
+          background: url('../img/event-img@2x.jpg') center / cover;
         }
 
-        .ui-btn-white {
-          color: $color-light-accent;
+        .col-right {
+          height: auto;
+          background: $color-white;
+          padding: 40px 20px;
+        }
+      }
+    }
+
+    .tempsure {
+      padding: 40px 20px;
+
+      .containerish {
+        display: grid;
+        row-gap: 1rem;
+
+        .col-left {
+          background: url('../img/tempsure-info-bg@2x.jpg') center / cover;
+          padding: 40px 20px;
+          grid-row: 2;
+
+          .ui-btn:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+
+          .ui-btn-white {
+            color: $color-light-accent;
+          }
+        }
+
+        .col-right {
+          height: 400px;
+          background: url('../img/tempsure-img@2x.jpg') center / cover;
         }
       }
     }
@@ -117,7 +146,6 @@
 
         .section-img {
           height: 300px;
-          background-attachment: fixed;
           margin-top: 2rem;
         }
       }
@@ -170,7 +198,7 @@
 
   /* APPOINTMENTS AND FEATURES ********************************************** */
   .appointments {
-    background: url('../../img/appointment-bg@2x.jpg') center / cover;
+    background: url('../img/appointment-bg@2x.jpg') center / cover;
     padding: 40px 20px;
 
     .containerish {
@@ -194,6 +222,85 @@
             justify-self: center;
             margin-bottom: 0;
           }
+        }
+      }
+    }
+  }
+
+  /* MAP ******************************************************************** */
+  .map {
+    height: 300px;
+  }
+
+  /* Footer 1 *************************************************************** */
+  .footer-1 {
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+
+      .col-left {
+        padding: 2rem 3rem;
+      }
+
+      .col-mid {
+        padding: 2rem 3rem;
+        grid-row: 2;
+        grid-column: 1 / -1;
+
+        .section-info {
+          .ui-btn-white {
+            color: $color-light-accent;
+          }
+        }
+      }
+
+      .col-right {
+        padding: 2rem 3rem;
+      }
+    }
+  }
+
+  /* FOOTER 2 *************************************************************** */
+  .footer2 {
+    background-color: $color-white;
+    width: 100%;
+    padding: 0.6rem 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    .footer-link-2 {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: calc(12px * 1.5);
+      font-family: $font-primary;
+      color: $color-text-grey !important;
+
+      &:hover {
+        color: $color-main;
+        text-decoration: none;
+      }
+    }
+
+    .containerish {
+      display: grid;
+      align-items: center;
+      grid-template-columns: max-content 1fr;
+      // justify-content: center;
+
+      .col-left {
+        .social-link {
+          color: $color-dark;
+
+          &:hover {
+            color: $color-main;
+          }
+        }
+
+        .social-link:not(:last-child) {
+          margin-right: .5rem;
         }
       }
     }
@@ -243,6 +350,10 @@
     padding: .2rem 1rem;
 
     &.show {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       background: $color-white !important;
       transition: all .3s ease-in-out;
       box-shadow: 0 3px 6px rgba($color-black, .06);
@@ -317,37 +428,44 @@
     }
   }
 
-  /* TEMPSURE *************************************************************** */
-  .tempsure {
-    padding: 50px 20px;
+  /* TEMPSURE-EVENT ********************************************************* */
+  .tempsure-event {
 
-    .containerish {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      column-gap: 1rem;
+    .event {
+      padding: 20px;
 
-      .col-left {
-        padding: 0 4rem;
-        grid-row: 1;
-        display: flex;
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        column-gap: 3rem;
+        row-gap: 0;
         align-items: center;
-
-        .ui-btn {
-          display: flex;
-          max-width: 220px;
-        }
-
-        .ui-btn:not(:last-child) {
-          margin-bottom: 1rem;
-        }
-
-        .ui-btn-white {
-          color: $color-light-accent;
-        }
+        padding: 1rem;
       }
+    }
 
-      .col-right {
-        height: 600px;
+    .tempsure {
+      padding: 40px 20px;
+
+      .containerish {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: 1fr 1.5fr;
+
+        .col-left {
+          background: url('../img/tempsure-info-bg@2x.jpg') center / cover;
+          padding: 40px 20px;
+          grid-row: 1;
+          grid-column: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .col-right {
+          height: 500px;
+          background: url('../img/tempsure-img@2x.jpg') center / cover;
+        }
       }
     }
   }
@@ -397,8 +515,7 @@
         }
 
         .section-img {
-          height: 300px;
-          background-attachment: fixed;
+          height: 469px;
           margin-top: 2rem;
         }
       }
@@ -459,6 +576,10 @@
     }
   }
 
+  /* MAP ******************************************************************** */
+  .map {
+    height: 400px;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -486,7 +607,7 @@
 
   /* APPOINTMENTS AND FEATURES ********************************************** */
   .appointments {
-    background: url('../../img/appointment-bg@2x.jpg') center / cover;
+    background: url('../img/appointment-bg@2x.jpg') center / cover;
     padding: 80px 20px;
 
     .containerish {
@@ -501,6 +622,52 @@
         .section-info {
           padding: 1.5rem 2rem;
         }
+      }
+    }
+  }
+
+  /* MAP ******************************************************************** */
+  .map {
+    height: 500px;
+  }
+
+  /* Footer 1 ************************************************************* */
+  .footer-1 {
+    position: relative;
+    overflow: visible;
+    height: 350px;
+
+    .containerish {
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 1rem;
+      z-index: 999;
+      padding: 0 20px;
+
+      .col-left {
+        padding: 2rem 3rem;
+        grid-row: 1;
+      }
+
+      .col-mid {
+        padding: 2rem 3rem;
+        grid-row: 1;
+        grid-column: 2;
+
+        .section-info {
+          .ui-btn-white {
+            color: $color-light-accent;
+          }
+        }
+      }
+
+      .col-right {
+        padding: 2rem 3rem;
+        grid-row: 1;
       }
     }
   }
@@ -551,37 +718,45 @@
     margin-right: 1.5rem;
   }
 
-  /* TEMPSURE *************************************************************** */
-  .tempsure {
-    padding: 50px 20px;
+  /* TEMPSURE-EVENT ********************************************************* */
+  .tempsure-event {
+    padding: 2rem 0;
 
-    .containerish {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 3rem;
+    .event {
+      padding: 20px;
 
-      .col-left {
-        padding: 0 4rem;
-        grid-row: 1;
-        display: flex;
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        column-gap: 3rem;
+        row-gap: 0;
         align-items: center;
-
-        .ui-btn {
-          display: flex;
-          max-width: 220px;
-        }
-
-        .ui-btn:not(:last-child) {
-          margin-bottom: 1rem;
-        }
-
-        .ui-btn-white {
-          color: $color-light-accent;
-        }
+        padding: 2rem;
       }
+    }
 
-      .col-right {
-        height: 600px;
+    .tempsure {
+      padding: 40px 20px;
+
+      .containerish {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: 1fr 1.5fr;
+
+        .col-left {
+          background: url('../img/tempsure-info-bg@2x.jpg') center / cover;
+          padding: 40px 20px;
+          grid-row: 1;
+          grid-column: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .col-right {
+          height: 500px;
+          background: url('../img/tempsure-img@2x.jpg') center / cover;
+        }
       }
     }
   }
@@ -621,8 +796,7 @@
         }
 
         .section-img {
-          height: 300px;
-          background-attachment: fixed;
+          height: 469px;
           margin-top: 2rem;
         }
       }
@@ -671,6 +845,11 @@
         margin-bottom: -8rem;
       }
     }
+  }
+
+  /* MAP ******************************************************************** */
+  .map {
+    height: 575px;
   }
 }
 

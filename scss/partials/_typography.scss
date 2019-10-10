@@ -60,7 +60,7 @@ h5 {
   font-family: $font-primary;
   font-size: 1.5625rem; //25px
   line-height: 1.5625rem;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   font-style: italic;
   // text-shadow: 0 0 6px rgba($color-black, .16);
@@ -70,7 +70,7 @@ h5 {
   font-family: $font-primary;
   font-size: 1.25rem; //20px
   line-height: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   font-style: italic;
   // text-shadow: 0 0 6px rgba($color-black, .16);
@@ -80,9 +80,9 @@ h5 {
 //Body Text
 .body-copy {
   font-size: 1rem;
-  line-height: calc(1rem * 1.5);
+  line-height: 30px;
   font-family: $font-primary;
-  font-weight: 400;
+  font-weight: 300;
 
   &.is-bold {
     font-weight: 700;
@@ -92,9 +92,9 @@ h5 {
 /* Lead Text (hero) */
 .lead-copy {
   font-size: 1.25rem;
-  line-height: calc(1rem * 1.5);
+  line-height: 30px;
   font-family: $font-primary;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* Footer2 Text */

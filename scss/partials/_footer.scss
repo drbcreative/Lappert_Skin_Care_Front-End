@@ -5,54 +5,51 @@
 /* FOOTER 1 SECTION */
 /* -------------------------------------------------------------------------- */
 .footer-1 {
-  background: url('../img/footer-1-bg@2x.jpg') center / cover;
-  min-height: 200px;
-  padding: 40px 20px;
+  background: $color-light;
+  min-height: 300px;
+  padding: 20px;
 
   .containerish {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    row-gap: 1rem;
 
-    .body-copy {
-      font-size: 1rem;
-      font-weight: 400;
+    .col-left {
+      background: url('../img/our-office-bg@2x.jpg') center / cover;
+      padding: 2rem 3rem;
     }
 
-    .footer-logo {
-      height: 129.76px;
-      width: 272.45px;
-      margin-bottom: 2rem;
+    .col-mid {
+      background: url('../img/newsletter-bg@2x.jpg') center / cover;
+      padding: 2rem 3rem;
+
+      .section-info {
+        .ui-btn-white {
+          color: $color-light-accent;
+        }
+      }
     }
 
-    .footer-map {
-      max-width: 518px;
-      max-height: 234px;
-    }
+    .col-right {
+      background: url('../img/quick-links-bg@2x.jpg') center / cover;
+      padding: 2rem 3rem;
 
+      .section-info {
+        .quicklinks {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
 
-    /* FOOTER-NAV */
-    .footer-nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      margin-top: 2rem;
+          li:not(:last-child) {
+            margin-bottom: .5rem;
+          }
 
-      li {
-        list-style-type: none;
+          li a {
+            color: $color-white;
 
-        .footer-nav-link {
-          font-family: $font-secondary;
-          font-size: 0.8125rem;
-          font-weight: 500;
-          color: $color-dark;
-
-          &:hover {
-            color: $color-main;
-            text-decoration: none;
+            &:hover {
+              color: $color-dark;
+              text-decoration: none;
+            }
           }
         }
       }
@@ -71,23 +68,22 @@
   display: flex;
   align-items: center;
 
-  .containerish {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
+  .footer-link-2 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: calc(12px * 1.5);
+    font-family: $font-primary;
+    color: $color-text-grey !important;
 
-    .footer-link-2 {
-      font-weight: 300;
-      font-size: 12px;
-      line-height: calc(12px * 1.5);
-      font-family: $font-primary;
-      color: $color-text-grey !important;
-
-      &:hover {
-        color: $color-main;
-        text-decoration: none;
-      }
+    &:hover {
+      color: $color-main;
+      text-decoration: none;
     }
+  }
+
+  .containerish {
+    display: grid;
+    align-items: center;
+    // justify-content: center;
   }
 }

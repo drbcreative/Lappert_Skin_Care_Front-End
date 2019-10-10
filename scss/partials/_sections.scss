@@ -5,7 +5,7 @@
 /* HERO ********************************************************************* */
 .hero {
   padding: 40px 20px;
-  background: url('../../img/hero-bg@2x.jpg') top / cover;
+  background: url('../img/hero-bg@2x.jpg') top / cover;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -58,39 +58,65 @@
   }
 }
 
-/* TEMPSURE ***************************************************************** */
-.tempsure {
-  background: url('../../img/tempsure-bg@2x.jpg') center / cover;
-  padding: 40px 20px;
+/* TEMPSURE-EVENT *********************************************************** */
+.tempsure-event {
+  background: url('../img/tempsure-bg@2x.jpg') center / cover;
 
-  .containerish {
-    display: grid;
-    row-gap: 1rem;
+  .event {
+    position: relative;
+    padding: 20px;
 
-    .col-left {
-      background: url('../../img/tempsure-info-bg@2x.jpg') center / cover;
-      padding: 40px 20px;
-      grid-row: 2;
+    .containerish {
+      display: grid;
+      box-shadow: 0 0 6px rgba($color-black, .1);
+      padding: 2rem;
 
-      .ui-btn:not(:last-child) {
-        margin-bottom: 1rem;
+      .col-left {
+        height: 300px;
+        background: url('../img/event-img@2x.jpg') center / cover;
       }
 
-      .ui-btn-white {
-        color: $color-light-accent;
+      .col-right {
+        height: auto;
+        background: $color-white;
+        padding: 40px 20px;
       }
     }
+  }
 
-    .col-right {
-      height: 400px;
-      background: url('../../img/tempsure-img@2x.jpg') center / cover;
+  .tempsure {
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      row-gap: 1rem;
+
+      .col-left {
+        background: url('../img/tempsure-info-bg@2x.jpg') center / cover;
+        padding: 40px 20px;
+        grid-row: 2;
+
+        .ui-btn:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        .ui-btn-white {
+          color: $color-light-accent;
+        }
+      }
+
+      .col-right {
+        height: 400px;
+        background: url('../img/tempsure-img@2x.jpg') center / cover;
+      }
     }
   }
 }
 
+
 /* SMARTLIPO **************************************************************** */
 .smartlipo {
-  background: url('../../img/smart-lipo-bg@2x.jpg') center / cover;
+  background: url('../img/smart-lipo-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   position: relative;
@@ -117,7 +143,7 @@
 
 /* TATOO AND FACELIFT ******************************************************* */
 .tattoo-facelift {
-  background: url('../../img/tattoo-facelift-bg@2x.jpg') center / cover;
+  background: url('../img/tattoo-facelift-bg@2x.jpg') center / cover;
 
   /* TATTOO REMOVAL */
   .tattoo-removal {
@@ -136,8 +162,7 @@
       .section-img {
         height: 300px;
         width: 100%;
-        background: url('../../img/tattoo-removal-img@2x.jpg') center / cover;
-        background-attachment: scroll;
+        background: url('../img/tattoo-removal-img@2x.jpg') center / cover;
         margin-top: 2rem;
       }
     }
@@ -152,7 +177,7 @@
       row-gap: 1rem;
 
       .col-left {
-        background: url('../../img/facelift-info-bg@2x.jpg') center / cover;
+        background: url('../img/facelift-info-bg@2x.jpg') center / cover;
         padding: 40px 20px;
         grid-row: 2;
 
@@ -167,7 +192,7 @@
 
       .col-right {
         height: 400px;
-        background: url('../../img/facelife-img@2x.jpg') center / cover;
+        background: url('../img/facelife-img@2x.jpg') center / cover;
       }
     }
   }
@@ -175,7 +200,7 @@
 
 /* LASER HAIR REMOVAL ******************************************************* */
 .laserhair {
-  background: url('../../img/laser-hair-removal-bg@2x.jpg') center / cover;
+  background: url('../img/laser-hair-removal-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   position: relative;
@@ -202,7 +227,7 @@
 
 /* APPOINTMENTS AND FEATURES ************************************************ */
 .appointments {
-  background: url('../../img/appointment-bg@2x.jpg') center / cover;
+  background: url('../img/appointment-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   .containerish {
@@ -223,7 +248,7 @@
       }
 
       .section-info {
-        background: url('../../img/botox-cosmetic-info-bg@2x.jpg') center / cover;
+        background: url('../img/botox-cosmetic-info-bg@2x.jpg') center / cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -260,7 +285,7 @@
 
       .section-info {
         grid-row: 1;
-        background: url('../../img/latisse-info-bg@2x.jpg') top / cover;
+        background: url('../img/latisse-info-bg@2x.jpg') top / cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -296,7 +321,7 @@
       }
 
       .section-info {
-        background: url('../../img/botox-cosmetic-info-bg@2x.jpg') center / cover;
+        background: url('../img/botox-cosmetic-info-bg@2x.jpg') center / cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -333,7 +358,7 @@
 
       .section-info {
         grid-row: 1;
-        background: url('../../img/latisse-info-bg@2x.jpg') top / cover;
+        background: url('../img/latisse-info-bg@2x.jpg') top / cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -396,4 +421,10 @@
       }
     }
   }
+}
+
+/* MAP ********************************************************************** */
+.map {
+  height: 200px;
+  background: url('../img/map@2x.jpg') center / cover;
 }

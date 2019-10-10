@@ -25,14 +25,6 @@
 		"oAP": "/assets/FONT LIST.txt",
 		"oF": 0
 		},
-	"/assets/lappert_v4.xd": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/lappert_v4.xd",
-		"oF": 0
-		},
 	"/css/theme.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -134,6 +126,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/img/event-img.jpg": {
+		"ft": 16384,
+		"iS": 42113,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/event-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/event-img@2x.jpg": {
+		"ft": 16384,
+		"iS": 109567,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/event-img@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/facelife-img@2x.jpg": {
@@ -287,6 +301,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/scroll_top.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/scroll_top.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/smart-lipo-bg@2x.jpg": {
 		"ft": 16384,
 		"iS": 279148,
@@ -367,10 +391,10 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/app.min.js",
-		"oF": 2,
+		"oAP": "/js/app-min.js",
+		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/js/app.min.js": {
 		"bF": 0,
@@ -426,6 +450,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/Lappert_Front-End.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Lappert_Front-End.zip",
+		"oF": 0
 		},
 	"/scss/modules/_all.scss": {
 		"aP": 0,
